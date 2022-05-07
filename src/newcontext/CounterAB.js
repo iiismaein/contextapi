@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
-import { CounterCtx } from './Context';
+import { CounterCtx } from './ContextAB';
 //
-function Counter() {
+function CounterAB() {
   /* =>> create consumer to access data */
 
   return (
@@ -10,7 +10,7 @@ function Counter() {
         // {({ counter, inc, dic }) => {
         return (
           <Fragment>
-            <h3>Counter is {value.counter}</h3>
+            <h3>CounterAB is {value.counter}</h3>
             <button onClick={operation.inc}> inc</button>
             <button onClick={operation.dic}> dic</button>
           </Fragment>
@@ -20,4 +20,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default CounterAB;

@@ -1,8 +1,9 @@
 import React, { useState, createContext } from 'react';
 // =>> 1-CreateContext and export it initial value =>0
 export const CounterCtx = createContext(1);
+CounterCtx.displayName = 'this name will show on chrome Dev';
 // تحتوي البروفايدر
-const Context = (props) => {
+const ContextAB = (props) => {
   const [counter, setCounter] = useState(1);
 
   const inc = () => {
@@ -29,4 +30,4 @@ const Context = (props) => {
     </CounterCtx.Provider>
   );
 };
-export default Context;
+export default ContextAB;
